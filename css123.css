@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2? family= Righteous & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Mono & display=swap');
+@import url('https://fonts.googleapis.com/css2? семья = Освальд и display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: coral;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+ margin-top: 57px;
+ height: 59px;
+}
+.logo{
+    font-family: 'Roboto Mono', monospace;
+    float: left;
+    font-size: 24px;
+}
+.navs{
+    margin: 0 auto;
+    text-align: center;
+    display: inline;
+    margin-left: 205px;
+}
+.nav{
+    font-family: 'Roboto Mono', monospace;
+    margin:10px 38px;
+}
+.nav:hover{
+ color: #ff0000;
+}
+.reg:hover{
+ color: #ff0000;
+}
+
+.reg{
+    font-family: 'Roboto Mono', monospace;
+    float: right;
+    border: 1px solid black;
+    padding: 18px 46px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    font-family: 'Roboto Mono', monospace;
+}
+.title_block{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 62px;
+    text-transform: uppercase;
+    max-width: 460px;
+}
+.text{
+    margin-top: 40px;
+    font-size: 24px;
+    display: block;
+    border-left: black solid 1px;
+    padding-left: 16px;
+}
+.btn{
+    border: 1px solid black;
+    padding: 18px 46px;
+    margin-top: 40px;
+    display: inline-block;
+}
+.hover_btn{
+    background-color: #dd1900;
+    border: 1px solid #dd1900;
+    padding: 18px 46px;
+    margin-top: 40px;
+    display: inline-block;
+    color: white;
+}
+.welcome_block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+}
+.man{
+    width: 470px;
+    margin: 0 auto;
+}
+
