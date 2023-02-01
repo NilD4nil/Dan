@@ -14,17 +14,23 @@
 header{
  margin-top: 57px;
  height: 59px;
+ display: grid;
+ grid-template-areas: "logo nav reg";
 }
 .logo{
     font-family: 'Roboto Mono', monospace;
     float: left;
     font-size: 24px;
+    grid-area: logo;
+    margin-top: 13px;
 }
 .navs{
     margin: 0 auto;
     text-align: center;
     display: inline;
     margin-left: 205px;
+    grid-area: nav;
+    margin-top: 17px;
 }
 .nav{
     font-family: 'Roboto Mono', monospace;
@@ -42,12 +48,13 @@ header{
 .btn:hover{
     color: #ff0000;
 }
-
 .reg{
     font-family: 'Roboto Mono', monospace;
     float: right;
     border: 1px solid black;
     padding: 18px 46px;
+    grid-area: reg;
+    width: max-content;
 }
 a{
     text-decoration: none;
@@ -142,4 +149,30 @@ span{
 .item > span{
 font-family: "Roboto Mono", cursive;
 font-size: 14px;
+}
+.menu{
+ display: contents;
+    grid-area: menu;
+    width: 50px;
+}
+@media screen and (max-width: 1250px) {
+ .container{
+     width: auto;
+ }
+ header{
+     grid-template-areas: "menu logo reg";
+ }
+ .menu{
+     display: flex;
+ }
+ .navs{
+     display: none;
+ }
+ .logo{
+     text-align: center;
+ }
+ .reg{
+     position: relative;
+     right: 1%;
+ }
 }
